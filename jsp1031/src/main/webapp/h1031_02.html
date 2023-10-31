@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+		
+		<script>
+			function next(){
+				
+				frm.submit();
+			}
+		</script>
+	</head>
+	<body>
+		<form name="frm" method="get" action="S02">
+			<label>학번</label>
+			<input type="text" name="stunum" id="stunum">
+			<br>
+			<label>이름</label>
+			<input type="text" name="name" id="name">
+			<br>
+			<label>국어</label>
+			<input type="text" name="kor" id="kor">
+			<br>
+			<label>영어</label>
+			<input type="text" name="eng" id="eng">
+			<br>
+			<label>수학</label>
+			<input type="text" name="math" id="math">
+			<br>
+			<label>합계</label>
+			<input type="text" name="total" id="total">
+			<br>
+			<label>계열선택</label>
+			<br>
+			<label>이과</label>
+			<input type="radio" name="gkr" id="E" value="E">
+			<label>문과</label>
+			<input type="radio" name="gkr" id="M" value="M">
+			<br>
+			<label>좋아하는 과목</label>
+			<br>
+			<input  type="checkbox" name="sbject" id="kor1" value="kor">
+			<label for="kor1">국어</label>
+			<input  type="checkbox" name="sbject" id="eng1" value="eng">
+			<label for="eng1">영어</label>
+			<input  type="checkbox" name="sbject" id="math1" value="math">
+			<label for="math1">수학</label>
+			<input  type="checkbox" name="sbject" id="science" value="science">
+			<label for="science">과학</label>
+			<input  type="checkbox" name="sbject" id="history" value="history">
+			<label for="history">역사</label>
+			<br>
+			<label>주소</label>
+			<select name="addrees" id="addrees">
+				<option value="seoul">서울</option>
+				<option value="busan">부산</option>
+				<option value="deagu">대구</option>
+				<option value="deajeon">대전</option>
+				<option value="incheon">인천</option>
+			</select>
+				<br>
+				<input type="button" id="btn" onclick="next()" value="확인"> 
+				<input type="reset" value="취소">
+				<br>
+			
+			
+		</form>
+	
+	</body>
+</html>
